@@ -8,14 +8,14 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f"bott: {bot.user}")
+    print(f"bot: {bot.user}")
     try:
         synced = await bot.tree.sync()
-        print(f"{len(synced)} wordking")
+        print(f"{len(synced)} working")
     except Exception as e:
-        print(f"eerr: {e}")
+        print(f"err: {e}")
 
-@bot.tree.command(name="test", description="teest")
+@bot.tree.command(name="test", description="test")
 async def dev(interaction: discord.Interaction):
     await interaction.response.send_message("working")
 
