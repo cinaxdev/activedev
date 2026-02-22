@@ -1,2 +1,2 @@
 # activedev
-claim active dev badge on dc
+claim active dev badge on dc!
